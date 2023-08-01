@@ -96,4 +96,147 @@ public class List {
 		temp.next=temp2;
 		
 	}
+	
+	//---ADDİNG GROUP OF NODES--- 
+	
+	
+	void AddNodestotheFirst(List list, int... x) {
+		
+		Node[] A = new Node[x.length];
+		int i = 0;
+		
+		for(int num : x) {
+			A[i] = new Node(); 
+			A[i].value = num;
+			i++;
+		}
+		
+		A[0].next=A[1]; // first node's next --ATTENTION--
+		A[1].next=A[2]; // we need to make this automathic!!!
+		
+		
+		Node headA = A[0];
+		Node tempA = headA;
+		
+		//adding the first
+		while(tempA.next!=null) {
+			tempA=tempA.next; // now temp_another located at the end
+		}
+		//System.out.println(tempA.value);
+		
+		// now we are adding this Node at first 
+	     tempA.next = list.head;
+	     list.head = headA;
+		
+	}
+	
+void AddNodesattheEnd(List list, int... x) {
+		
+		Node[] A = new Node[x.length];
+		int i = 0;
+		
+		for(int num : x) {
+			A[i] = new Node(); 
+			A[i].value = num;
+			i++;
+		}
+		
+		A[0].next=A[1]; // first node's next --LOOK HERE---
+		A[1].next=A[2]; // we need to make this automathic!!!
+		
+		
+		Node headA = A[0];
+		Node tempA = headA;
+		
+		Node listtemp = list.head;
+	
+		while(listtemp.next!=null) {
+			listtemp=listtemp.next; // now listtemp located at the end
+		}		
+		// now we are adding this Node to the end
+	    listtemp.next = headA;
+		
+	}
+
+void AddNodestotheMid(int index,List list, int... x) {
+	
+	Node[] A = new Node[x.length];
+	int i = 0;
+	
+	for(int num : x) {
+		A[i] = new Node(); 
+		A[i].value = num;
+		i++;
+	}
+	
+	A[0].next=A[1]; // first node's next --LOOK HERE---
+	A[1].next=A[2]; // we need to make this automathic!!!
+	
+	
+	Node headA = A[0];
+	Node tempA = headA;
+	
+	Node listtemp = list.head;
+
+	
+	for(int j=0; j<(index-2); j++) {
+		listtemp = listtemp.next;
+	}
+	
+	for(int z=1; z<(x.length); z++) {
+	 tempA = tempA.next;
+	}
+	
+	// now we are adding this Node to the mid
+	tempA.next = listtemp.next;
+    listtemp.next = headA;
+	
+}
+	
+	
+// ---DELETİNG GROUP OF NODES--- 
+	
+void DeleteFirstNodes(int index, List list) { // delete a group of Nodes at the beggining
+	Node listtemp=list.head;
+	for(int i = 1; i<index; i++) {
+		listtemp= listtemp.next;
+	}
+	head = listtemp.next;
+	
+}
+
+void DeleteLastNodes(int index, List list) { // delete a group of Nodes at the beggining
+	Node listtemp=list.head;
+	int x = 1;
+	while(listtemp.next!=null) {
+		listtemp=listtemp.next;
+		x++;
+	}
+	 // now x are like list.length 
+	listtemp=list.head;
+	
+	int len = x - index;
+	for(int i = 1; i<len; i++) {
+		listtemp= listtemp.next;
+	}
+	
+	listtemp.next=null;
+	
+}
+
+void DeleteMidNodes(int start, int length, List list) {
+	
+	Node listtemp = list.head;
+	
+	for(int i=1; i<start; i++) {
+		listtemp=listtemp.next;	
+	}
+	
+	for(int j=1; j<length; j++) {
+		listtemp=listtemp.next;
+	}
+	
+	list.head=listtemp.next;
+}
+	
 }
