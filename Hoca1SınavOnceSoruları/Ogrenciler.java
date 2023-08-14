@@ -78,6 +78,7 @@ void enYuksekNot() {
 		}
 		tempp2 = temp2.next;
 		tempp2 = temp2.next;
+                // temp2 = null; 
 		
 		tempp1.next = tempp2;
 		tempp2.prev = tempp1;
