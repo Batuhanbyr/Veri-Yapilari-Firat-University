@@ -2,13 +2,42 @@ package GenelSınav2020;
 import java.util.*;
 
 public class Main {
+	//*************************************4. soru için fonksiyon************************************************** 
+	// Verilen derece dizisine göre yönsüz ve ağırlıksız bir graf oluşturan ve komşuluk matrisini döndüren bir metod
+	public static int[][] kmatris(int[] derece) {
+	  // Düğüm sayısını bul
+	  int n = derece.length;
+	  // Komşuluk matrisini oluştur
+	  int[][] matris = new int[n][n];
+	  // Derece dizisini kopyala
+	  int[] kalan = derece.clone();
+	  // Her düğüm için
+	  for (int i = 0; i < n; i++) {
+	    // Eğer kalan derecesi varsa
+	    if (kalan[i] > 0) {
+	      // Diğer düğümlerle komşuluk kur
+	      for (int j = i + 1; j < n; j++) {
+	        // Eğer diğer düğümün de kalan derecesi varsa
+	        if (kalan[j] > 0) {
+	          // Komşuluk matrisinde 1 değerini ata
+	          matris[i][j] = 1;
+	          matris[j][i] = 1;
+	          // Kalan dereceleri azalt
+	          kalan[i]--;
+	          kalan[j]--;
+	          // Eğer düğümün kalan derecesi bitti ise döngüden çık
+	          if (kalan[i] == 0) {
+	            break;
+	          }
+	        }
+	      }
+	    }
+	  }
+	  // Komşuluk matrisini döndür
+	  return matris;
+	}
 
-	public static void main(String[] args) {
-		
-		
-		
-		
-		
+	public static void main(String[] args) {	
 		
 		 //****************************************2. SORU****************************************
 		/*Liste L1 = new Liste();
@@ -58,8 +87,23 @@ public class Main {
 		L3.linkedlist.addAll(L2.linkedlist);
 		System.out.println(L3.linkedlist);
 	}
+	 //****************************************4 SORU****************************************
+	/*elimizde yönsüz ve ağırlıksız bir grafı oluşturmak için sadece her düğümün derecesini tutan bir dizi bulunmaktadır.
+    	 * bu diziyi kullanarak grafı temsil eden komşuluk matrisini oluşturunuz? int[][] kmatris(int[] derece){} metodu yazılmalıdır.
+    	 * Örneğin derece[] = {2,2,1,1} ise matrisi aşağıdaki gibi oluşur. matris = {{0,1,1,0},{1,0,0,1},{1,0,0,0},{0,1,0,0}}"
+    	 * bu soruyu çözen java kodunu yazar mısın?*/
 	
-	
+	int[] derece = {2, 3, 3, 3, 1};
+        int[][] matris = kmatris(derece);
+
+        if (matris != null) {
+            for (int i = 0; i < matris.length; i++) {
+                for (int j = 0; j < matris[i].length; j++) {
+                    System.out.print(matris[i][j] + " ");
+                }
+                System.out.println();
+            }
+        }
 	        //****************************************6. SORU****************************************
 			/*  1 ile 100 arasında rastgele üretilen 20 adet sayıyı bir bağlı listeye ekleyen ve ekleme yaparken
 			 *  Rastegele üretilen sayı eğer bağlı listede var ise bu sayı bağlı listeye eklemeyerek yeni bir sayı 
