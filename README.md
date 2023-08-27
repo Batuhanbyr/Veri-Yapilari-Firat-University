@@ -15,7 +15,6 @@
 2.  Sıralama Algoritmaları [SıralamaAlgoritmaları](#sıralı-arama)
 #
 ### Arama Algoritmaları
-[başa-dön](#içindekiler)
 <a name="arama"></a>
 `Açıklama:` Arama algoritmaları, bir veri setindeki hedef elemanı bulmak için kullanılır.
 * Doğrusal Arama (Linear Search) [dogrusalarama](#dogrusal-arama)
@@ -29,7 +28,8 @@
   * `Average Case: O(n)`
   * Nerelerde Kullanılır?
      - Küçük veri setlerinde ve sırasız verilerde kullanılabilir. Veri seti çok büyük değilse veya dizi sırasızsa tercih edilebilir. Örnek olarak, bir kitaplığın raflarında belirli bir kitabı aramak gibi.
-     - İnternet tarayıcılar, web sayfasında metin ararken genellikle lineer arama algoritmasını kullanır. 
+     - İnternet tarayıcılar, web sayfasında metin ararken genellikle lineer arama algoritmasını kullanır.
+     - [başa-dön](#içindekiler)
 ```java
 public static int doğrusalArama(int[] dizi, int hedef) {
 	        for (int i = 0; i < dizi.length; i++) {
@@ -49,7 +49,6 @@ public static int doğrusalArama(int[] dizi, int hedef) {
 
 #
 ### İkili Arama Algoritması (Binary Search)
-[başa-dön](#içindekiler)
 <a name="ikili-arama"></a>
 * `Açıklama:` İkili arama, sıralı bir dizide hedef elemanı bulmak için kullanılır. Her adımda diziyi ikiye bölerek aranan elemanı bulmaya çalışır. Bu sayede veriyi hızlı bir şekilde arama yapar. Ancak dizi sıralı olmalıdır ve bu nedenle önceden sıralama işlemi gerekebilir.
   * `Best Case: O(1)` - Hedef elemanın dizinin tam ortasında bulunması durumu.
@@ -57,7 +56,8 @@ public static int doğrusalArama(int[] dizi, int hedef) {
   * `Average Case:  O(log n)`  
   * Nerelerde Kullanılır?
      - büyük veritabanlarında veya indekslenmiş verilerde ikili arama daha yaygın olarak kullanılır.
-  * 🔴 `NOT:` İkili arama, lineer aramaya göre genellikle daha hızlıdır. Ancak ikili arama için dizi sıralı olmalıdır, bu nedenle dizi sıralı ise tercih edilir. Lineer arama ise dizi sıralı ya da sırasız olsa da çalışabilir, ancak büyük veri setleri için daha yavaş olabilir. 
+  * 🔴 `NOT:` İkili arama, lineer aramaya göre genellikle daha hızlıdır. Ancak ikili arama için dizi sıralı olmalıdır, bu nedenle dizi sıralı ise tercih edilir. Lineer arama ise dizi sıralı ya da sırasız olsa da çalışabilir, ancak büyük veri setleri için daha yavaş olabilir.
+  * [başa-dön](#içindekiler)
 ```java
  public static int ikiliArama(int[] dizi, int hedef) {
 	        int sol = 0;
@@ -93,7 +93,6 @@ public static int doğrusalArama(int[] dizi, int hedef) {
 #
 
 ### Sıralama Algoritmaları
-[başa-dön](#içindekiler)
 <a name="sıralı-arama"></a>
 `Açıklama:` Sıralama algoritmaları, bir veri setinin istenilen şekilde sıralanması için kullanılır.
 * Baloncuk Sıralaması (Bubble Sort) [bubble](#bubble)
@@ -102,11 +101,11 @@ public static int doğrusalArama(int[] dizi, int hedef) {
 * Hızlı Sıralama Algoritması (Quick Sort) [quick](#quick)
 * Yığınlama Sıralaması (Heap Sort) [heap](#heap)
 * Birleştirme Sıralaması (Merge Sort)  [merge](#merge)
+* [başa-dön](#içindekiler)
 
 #
 
 ### Baloncuk Sıralaması (Bubble Sort)
-[başa-dön](#içindekiler)
 <a name="bubble"></a>
 `Açıklama:` Baloncuk sıralaması, her adımda adışık elemanları karşılaştırıp, en büyük elemanı dizinin sonuna taşır. Bu işlem sıralamanın sonuna kadar iterasyonlarla sürdürülür.
 #### Algoritma Adımları:
@@ -124,6 +123,7 @@ public static int doğrusalArama(int[] dizi, int hedef) {
      - algoritma analizinde, en kötü durum senaryolarını test etmek için kullanılabilir.
       
 * 🔴 `NOT:` Genel olarak, Bubble Sort verimlilik açısından daha iyi alternatifleri olduğu için gerçek dünya uygulamalarında sınırlı bir kullanıma sahiptir. Daha büyük veri setleri ve daha hızlı sıralama algoritmaları gerektiğinde Bubble Sort yerine diğer algoritmalar tercih edilir.
+* [başa-dön](#içindekiler)
 
 ```java
 public static void bubbleSort(int[] dizi) {
@@ -147,7 +147,6 @@ public static void bubbleSort(int[] dizi) {
 #
 
 ### Seçmeli Sıralama (Selection Sort)
-[başa-dön](#içindekiler)
 <a name="selection"></a>
 `Açıklama:` Seçmeli sıralamanın temel fikri, veri setinden en küçük veya en büyük elemanı seçip sıralı olmayan bölüme yerleştirmek ve bu işlemi adım adım tekrarlayarak sıralı bir dizi oluşturmaktır.
 #### Algoritma Adımları:
@@ -165,6 +164,7 @@ public static void bubbleSort(int[] dizi) {
      - daha verimli sıralama algoritmalarıyla karşılaştırma yapmak veya daha gelişmiş algoritmaların nasıl çalıştığını anlamak için kullanılabilir.
       
 * 🔴 `NOT:` Genel olarak, gerçek dünya uygulamalarında Selection Sort'un kullanımı sınırlıdır. Daha büyük veri setleri ve daha hızlı sıralama algoritmaları gerektiğinde diğer algoritmalar tercih edilir.
+* [başa-dön](#içindekiler)
 
 ```java
 public static void selectionSort(int[] dizi) {
@@ -191,7 +191,6 @@ public static void selectionSort(int[] dizi) {
 # 
 
 ### Ekleme Sıralaması (Insertion Sort)
-[başa-dön](#içindekiler)
 <a name="insertion"></a>
 `Açıklama:` Ekleme sıralamasının temel fikri, sıralanmış bölüme eleman eklemek ve bu işlemi adım adım tekrarlayarak sıralı bir dizi oluşturmaktır.
 #### Algoritma Adımları:
@@ -209,6 +208,7 @@ public static void selectionSort(int[] dizi) {
      - diğer daha karmaşık sıralama algoritmalarının nasıl çalıştığını anlamak ve karşılaştırmak için bir başlangıç noktası olarak kullanılabilir.
       
 * 🔴 `NOT:` Insertion Sort, nispeten küçük veri setleri veya nispeten sıralı verilerde kullanıldığında iyi bir performans gösterebilir. Ancak büyük veri setlerinde veya daha hızlı sıralama algoritmalarının tercih edilmesi gerektiğinde kullanımı sınırlıdır.
+* [başa-dön](#içindekiler)
 
 ```java
 public static void insertionSort(int[] dizi) {
@@ -233,7 +233,6 @@ public static void insertionSort(int[] dizi) {
 
 #
 ### Hızlı Sıralama (Quick Sort)
-[başa-dön](#içindekiler)
 <a name="quick"></a>
 `Açıklama:` hızlı ve etkili bir sıralama algoritmasıdır. Bu algoritma, sıralanacak veri setini bölüp parçalayarak çalışır (divide and conquer) . Her adımda bir "pivot" elemanı seçilir ve bu pivot elemanının solunda daha küçük, sağındaysa daha büyük elemanlar yer alacak şekilde bölünme işlemi yapılır. Bu bölünme işlemi sırasıyla rekürsif olarak devam eder ve sonuç olarak veri seti sıralanmış olur.
 
@@ -253,6 +252,7 @@ public static void insertionSort(int[] dizi) {
      - Veri madenciliği ve büyük veri analizi alanlarında tercih edilebilir.
       
 * 🔴 `NOT:` Genel olarak, Quick Sort büyük veri setlerini hızlı bir şekilde sıralamak istendiğinde veya veri sıralamasının gerektiği birçok uygulama alanında kullanılabilir. Daha hızlı sıralama algoritmaları olan Merge Sort veya Tim Sort gibi algoritmalarla da karşılaştırma yapmak faydalı olabilir.
+* [başa-dön](#içindekiler)
 
 ```java
 public static void quickSort(int[] dizi, int küçük, int büyük) {
@@ -292,7 +292,6 @@ public static void quickSort(int[] dizi, int küçük, int büyük) {
 # 
 
 ### Yığınlama Sıralaması (Heap Sort)
-[başa-dön](#içindekiler)
 <a name="heap"></a>
 `Açıklama:` Bu algoritma, bir "heap" veri yapısı kullanarak veri setini sıralar. Heap, özellikle en büyük veya en küçük elemanı hızla almak için optimize edilmiş bir ağaç yapısıdır.
 #### Algoritma Adımları:
@@ -308,6 +307,7 @@ public static void quickSort(int[] dizi, int küçük, int büyük) {
      - Büyük miktardaki veri setlerini analiz etmek veya sıralamak için Heap Sort kullanılabilir. İstatistik ve veri madenciliği uygulamalarında tercih edilebilir.
       
 * 🔴 `NOT:` Genel olarak, Heap Sort büyük veri setlerini sıralamak veya öncelik kuyrukları oluşturmak gibi durumlarda tercih edilebilir. Daha verimli sıralama algoritmaları gibi Merge Sort veya Quick Sort gibi seçenekler de göz önünde bulundurulmalıdır.
+* [başa-dön](#içindekiler)
 
 ```java
 public static void heapSort(int[] dizi) {
@@ -359,7 +359,6 @@ public static void heapSort(int[] dizi) {
 #
 
 ### Birleştirme Sıralaması (Merge Sort)
-[başa-dön](#içindekiler)
 <a name="merge"></a>
 `Açıklama:` Merge Sort, veri setini bölerek sıralayan etkili bir sıralama algoritmasıdır. Veri setini önce küçük parçalara böler, sonra bu parçaları sıralayarak birleştirir. Merge Sort, özellikle büyük veri setleri üzerinde iyi bir performans gösterir.
 #### Algoritma Adımları:
@@ -375,6 +374,7 @@ public static void heapSort(int[] dizi) {
      - Bellek boyutları yetersiz olduğunda veya veri belleğine sığmayan büyük veri setleri üzerinde sıralama yapmak gerektiğinde Merge Sort kullanılabilir.
       
 * 🔴 `NOT:` Genel olarak, Merge Sort büyük veri setleri üzerinde sıralama gerektiğinde veya stabil bir sıralama algoritması kullanılması gerektiğinde tercih edilebilir. Diğer hızlı sıralama algoritmaları gibi Quick Sort veya Heap Sort da göz önünde bulundurulabilir.
+* [başa-dön](#içindekiler)
 
 ```java
 public static void mergeSort(int[] arr, int left, int right) {
