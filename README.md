@@ -2,13 +2,20 @@
 # VERİ YAPILARI ***Fırat Üniversitesi*** <sub> <img src="https://github.com/Batuhanbyr/Veri-Yapilari-Firat-University/assets/95686987/51d55905-e9c9-4a7d-b0f8-276c039482d3" alt="drawing" width="50"/> </sub>
 ***
 >BM veri yapıları dersi konuları & çıkmış soruları
+# İçindekiler
+<a name="içindekiler"></a>
+1. Algoritmalar [Algoritmalar](#algoritmalar)
 
+#
 
 # Algoritmalar
+[başa-dön](#içindekiler)
+<a name="algoritmalar"></a>
 1. Arama Algoritmaları [AramaAlgoritmaları](#arama)
 2.  Sıralama Algoritmaları [SıralamaAlgoritmaları](#sıralı-arama)
 #
 ### Arama Algoritmaları
+[başa-dön](#içindekiler)
 <a name="arama"></a>
 `Açıklama:` Arama algoritmaları, bir veri setindeki hedef elemanı bulmak için kullanılır.
 * Doğrusal Arama (Linear Search) [dogrusalarama](#dogrusal-arama)
@@ -42,6 +49,7 @@ public static int doğrusalArama(int[] dizi, int hedef) {
 
 #
 ### İkili Arama Algoritması (Binary Search)
+[başa-dön](#içindekiler)
 <a name="ikili-arama"></a>
 * `Açıklama:` İkili arama, sıralı bir dizide hedef elemanı bulmak için kullanılır. Her adımda diziyi ikiye bölerek aranan elemanı bulmaya çalışır. Bu sayede veriyi hızlı bir şekilde arama yapar. Ancak dizi sıralı olmalıdır ve bu nedenle önceden sıralama işlemi gerekebilir.
   * `Best Case: O(1)` - Hedef elemanın dizinin tam ortasında bulunması durumu.
@@ -85,6 +93,7 @@ public static int doğrusalArama(int[] dizi, int hedef) {
 #
 
 ### Sıralama Algoritmaları
+[başa-dön](#içindekiler)
 <a name="sıralı-arama"></a>
 `Açıklama:` Sıralama algoritmaları, bir veri setinin istenilen şekilde sıralanması için kullanılır.
 * Baloncuk Sıralaması (Bubble Sort) [bubble](#bubble)
@@ -97,6 +106,7 @@ public static int doğrusalArama(int[] dizi, int hedef) {
 #
 
 ### Baloncuk Sıralaması (Bubble Sort)
+[başa-dön](#içindekiler)
 <a name="bubble"></a>
 `Açıklama:` Baloncuk sıralaması, her adımda adışık elemanları karşılaştırıp, en büyük elemanı dizinin sonuna taşır. Bu işlem sıralamanın sonuna kadar iterasyonlarla sürdürülür.
 #### Algoritma Adımları:
@@ -137,6 +147,7 @@ public static void bubbleSort(int[] dizi) {
 #
 
 ### Seçmeli Sıralama (Selection Sort)
+[başa-dön](#içindekiler)
 <a name="selection"></a>
 `Açıklama:` Seçmeli sıralamanın temel fikri, veri setinden en küçük veya en büyük elemanı seçip sıralı olmayan bölüme yerleştirmek ve bu işlemi adım adım tekrarlayarak sıralı bir dizi oluşturmaktır.
 #### Algoritma Adımları:
@@ -180,6 +191,7 @@ public static void selectionSort(int[] dizi) {
 # 
 
 ### Ekleme Sıralaması (Insertion Sort)
+[başa-dön](#içindekiler)
 <a name="insertion"></a>
 `Açıklama:` Ekleme sıralamasının temel fikri, sıralanmış bölüme eleman eklemek ve bu işlemi adım adım tekrarlayarak sıralı bir dizi oluşturmaktır.
 #### Algoritma Adımları:
@@ -221,6 +233,7 @@ public static void insertionSort(int[] dizi) {
 
 #
 ### Hızlı Sıralama (Quick Sort)
+[başa-dön](#içindekiler)
 <a name="quick"></a>
 `Açıklama:` hızlı ve etkili bir sıralama algoritmasıdır. Bu algoritma, sıralanacak veri setini bölüp parçalayarak çalışır (divide and conquer) . Her adımda bir "pivot" elemanı seçilir ve bu pivot elemanının solunda daha küçük, sağındaysa daha büyük elemanlar yer alacak şekilde bölünme işlemi yapılır. Bu bölünme işlemi sırasıyla rekürsif olarak devam eder ve sonuç olarak veri seti sıralanmış olur.
 
@@ -279,6 +292,7 @@ public static void quickSort(int[] dizi, int küçük, int büyük) {
 # 
 
 ### Yığınlama Sıralaması (Heap Sort)
+[başa-dön](#içindekiler)
 <a name="heap"></a>
 `Açıklama:` Bu algoritma, bir "heap" veri yapısı kullanarak veri setini sıralar. Heap, özellikle en büyük veya en küçük elemanı hızla almak için optimize edilmiş bir ağaç yapısıdır.
 #### Algoritma Adımları:
@@ -345,6 +359,7 @@ public static void heapSort(int[] dizi) {
 #
 
 ### Birleştirme Sıralaması (Merge Sort)
+[başa-dön](#içindekiler)
 <a name="merge"></a>
 `Açıklama:` Merge Sort, veri setini bölerek sıralayan etkili bir sıralama algoritmasıdır. Veri setini önce küçük parçalara böler, sonra bu parçaları sıralayarak birleştirir. Merge Sort, özellikle büyük veri setleri üzerinde iyi bir performans gösterir.
 #### Algoritma Adımları:
