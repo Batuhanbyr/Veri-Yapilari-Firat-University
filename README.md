@@ -5,6 +5,7 @@
 # İçindekiler
 <a name="içindekiler"></a>
 1. Algoritmalar [Algoritmalar](#algoritmalar)
+2. İkili Ağaçlar [Ağaçlar](#ağaçlar)
 
 #
 
@@ -432,3 +433,179 @@ public static void mergeSort(int[] arr, int left, int right) {
     <img src="https://img.youtube.com/vi/4VqmGXwpLqc/0.jpg" alt="BinarySearch">
   </a>
 </p>
+
+#
+
+# İkili Ağaçlar (Binary Search Tree)
+<a name="ağaçlar"></a>
+* İkili arama ağacında bir düğümün en fazla iki tane çoçuğu vardır ve alt/çocuk bağlantıları belirli bir sıraya göre yapılır. Küçük veya alfabetik olarak önce olanlar sola, büyük veya eşit olanlar sağ tarafa bağlanır.
+* Dengeli ikili ağaç üzerinde arama yapmanın karmaşıklığı `O(log₂[n])`, dengesiz bir ikili ağaç üzerinde ise (bağlantılı listeye kaymıştır) `O(n)` ' e doğru kayar.
+  
+Basit Bir Dengeli İkili Ağaç Modeli:
+```mermaid
+graph TD;
+    10-->8;
+    10-->14;
+    8-->2;
+    8-->9;
+    14-->12;
+    14-->16;
+```
+Basit Bir Dengesiz İkili Ağaç Modeli:
+```mermaid
+graph TD;
+    9-->14;
+    14-->38;
+    38-->40;
+    40-->39;
+    40-->42;
+```
+[başa-dön](#içindekiler)
+## İkili Ağaç için Düğüm oluşturma
+* İkili ağaçta bir düğüme ait veri yapısında dataya ek olarak iki tane işaretçi bulunur; biri sol diğeri sağ olarak adlandırılan bu işaretçiler düğümlerin çoçuklarını bağlamak içindir.
+```java
+public class Node {
+int data;
+Node left;
+Node right;
+
+public Node(int data) {
+	this.data = data;
+	left = null;
+	right = null;
+}
+```
+[başa-dön](#içindekiler)
+## İkili Ağaça düğüm ekleme
+```java
+public class Agac {
+ Node root;
+
+public Agac() {
+root = null;
+}
+
+Node newNode(int data) {
+	root = new Node(data);
+	return root;
+}
+
+Node insert(Node root, int data) {
+	if(root != null) {
+		if(data<root.data) 
+			root.left = insert(root.left,data);
+		else 
+			root.right = insert(root.right,data);
+	}else {
+		root = newNode(data);
+	}
+	return root;
+} }
+```
+[başa-dön](#içindekiler)
+## İkili Ağaç üzerinde dolaşma & düğümlere erişim 
+1. Preorder -->   KÖK, SOL TARAF, SAĞ TARAF
+2. Inorder -->    SOL TARAF, KÖK, SAĞ TARAF
+3. Postorder -->  SOL TARAF, SAĞ TARAF, KÖK
+
+## Preorder dolaşma
+```java
+void preOrder(Node root) {
+	if(root != null) {
+		System.out.print(root.data + " ");
+		preOrder(root.left);
+		preOrder(root.right);
+	}
+}
+```
+
+## Inorder dolaşma
+```java
+void inOrder(Node root) {
+	if(root != null) {
+		inOrder(root.left);
+		System.out.print(root.data + " ");
+		inOrder(root.right);
+	}
+}
+```
+
+## Postorder dolaşma
+```java
+void postOrder(Node root) {
+	if(root != null) {
+		postOrder(root.left);
+		postOrder(root.right);
+		System.out.print(root.data + " ");
+	}
+}
+```
+[başa-dön](#içindekiler)
+## İkili Ağaç üzerinde düğüm silme
+```java
+// Verilen değeri ağaçtan silen fonksiyon
+Node deleteNode(Node root, int key) {
+    // Temel durum: Ağaç boşsa veya istenen düğüm null ise
+    if (root == null)
+        return root;
+
+    // İstenen değer, sol alt ağaçta ise sol tarafa git
+    if (key < root.data)
+        root.left = deleteNode(root.left, key);
+    // İstenen değer, sağ alt ağaçta ise sağ tarafa git
+    else if (key > root.data)
+        root.right = deleteNode(root.right, key);
+    // Eğer değer bulunduysa
+    else {
+        // Sadece bir çocuğu veya hiç çocuğu olmayan durumda düğümü sil
+        if (root.left == null)
+            return root.right;
+        else if (root.right == null)
+            return root.left;
+
+        // İki çocuğu olan durumda, inorder halefini bul
+        root.data = minValue(root.right);
+
+        // Inorder halefi olan düğümü sil
+        root.right = deleteNode(root.right, root.data);
+    }
+
+    return root;
+}
+
+// Verilen ağacın en küçük değerini bulan yardımcı fonksiyon
+int minValue(Node root) {
+    int minValue = root.data;
+    while (root.left != null) {
+        minValue = root.left.data;
+        root = root.left;
+    }
+    return minValue;
+}
+```
+[başa-dön](#içindekiler)
+## İkili Ağaç boyut & yükseklik bulma
+```java
+int height(Node root) {
+	if(root == null) {
+		return -1;
+	}else {
+		int  sol=0; int sag=0;
+		sol = height(root.left);
+		sag = height(root.right);
+		if(sol>sag) {
+			return sol+1;
+		}else {
+			return sag+1;
+		}
+	}
+}
+
+int size(Node root) {
+	if(root==null) {
+		return 0;
+	}else {
+		return size(root.left) + 1 + size(root.right);
+	}
+}
+```
