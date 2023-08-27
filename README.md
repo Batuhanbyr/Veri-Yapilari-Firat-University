@@ -610,3 +610,11 @@ int size(Node root) {
 }
 ```
 [başa-dön](#içindekiler)
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Gt2yBZAhsGM">
+    <img src="https://img.youtube.com/vi/Gt2yBZAhsGM/0.jpg" alt="BinarySearch">
+  </a>
+</p>
+
+#
