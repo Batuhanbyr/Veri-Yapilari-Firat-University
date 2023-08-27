@@ -609,3 +609,4 @@ int size(Node root) {
 	}
 }
 ```
+[başa-dön](#içindekiler)
