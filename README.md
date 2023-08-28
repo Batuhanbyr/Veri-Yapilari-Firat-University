@@ -6,6 +6,7 @@
 <a name="içindekiler"></a>
 1. Algoritmalar [Algoritmalar](#algoritmalar)
 2. İkili Ağaçlar [Ağaçlar](#ağaçlar)
+3. Graflar [Graflar](#graflar)
 
 #
 
@@ -617,4 +618,68 @@ int size(Node root) {
   </a>
 </p>
 
+#
+
+# Graflar
+<a name="grraflar"></a>
+1. Komşuluk Matrisi &  Komşuluk Listesi (Adjacency Matris & Adjacency Matris)
+2. Depth First Search - DFS
+3. Breadth First Search - BFS
+4. [başa-dön](#içindekiler)
+
+## Komşuluk Matrisi &  Komşuluk Listesi (Adjacency Matris & Adjacency Matris)
+`Açıklama:`Komşuluk matrisi, bir grafın düğümlerinin komşuluk ilişkilerini temsil etmek için kullanılan bir matristir. Eğer iki düğüm arasında bir kenar varsa, ilgili matris hücresi 1 olarak işaretlenir; aksi halde 0 olarak kalır. Komşuluk matrisi genellikle kare matris şeklindedir (NxN boyutunda), N grafın düğüm sayısını temsil eder. Simetrik olmak zorundadır. Komşuluk listesi, her düğümün komşularını bir liste veya dizi şeklinde saklayan bir veri yapısıdır. Her düğüm için bir liste veya dizi elemanı bulunur ve bu elemanlar düğümün komşularını temsil eder.
+### karmaşıklıkları
+1. Matris --> Time Complexity : O(1) &&  Space Complexity : O(V^2) V:degree sum 
+2. Liste -->  Time Complexity : O(V) V:degree sum  && Space Complexity : O(V+E) E:edge num 
+
+[başa-dön](#içindekiler)
+#
+## DFS 
+`Açıklama:`Temel fikir, bir düğümden başlayarak mümkün olduğunca derinlemesine ilerlemektir. Yani, bir düğümden başlayıp onun bir komşusuna ilerler, ardından o komşunun bir komşusuna ilerler ve bu şekilde devam eder. Derinlik öncelikli arama, bir düğümün tüm dallarını keşfetmeden önce diğer dallara geçmez.
+#### Algoritma Adımları:
+
+1. Başlangıç düğümünü ziyaret et ve işaretle.
+2. Eğer henüz ziyaret etmediğin komşu düğümler varsa, bu komşulardan birini seç.
+3. Seçtiğin komşu düğümü yığına ekle ve işaretle.
+4. Eğer daha fazla komşu düğüm yoksa, yığını pop yaparak bir önceki düğüme geri dön.
+5. Eğer yığın boşalana kadar bu adımları tekrarla.
+
+* Nerelerde kullanılır?
+  1. Labirent problemlerinde en kısa yolu bulmada kullanılabilir.
+  2. İkili ağaçları inşa etme ve gezme gibi durumlarda kullanılır.
+  3. Topolojik sıralama gibi problemlerde kullanılabilir.
+  4. Örüntü tanıma ve yapay zeka algoritmalarında kullanılabilir.
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=by93qH4ACxo">
+    <img src="https://img.youtube.com/vi/by93qH4ACxo/0.jpg" alt="BinarySearch">
+  </a>
+</p>
+
+[başa-dön](#içindekiler)
+
+#
+## BFS 
+`Açıklama:`bir graf veya ağacın düğümlerini ziyaret etmek için kullanılan bir diğer algoritmadır. BFS, düğümlere mümkün olduğunca yakından başlayarak ilerler. Yani, bir düğümden başlayıp tüm komşularını ziyaret ettikten sonra, bu komşuların komşularına geçer.
+#### Algoritma Adımları:
+
+1. Başlangıç düğümünü kuyruğa ekle ve işaretle.
+2. Kuyruktan bir düğüm çıkar ve ziyaret et.
+3. Bu düğümün henüz ziyaret etmediğin komşularını kuyruğa ekle ve işaretle.
+4. Kuyruk boşalana kadar bu adımları tekrarla.
+
+* Nerelerde kullanılır?
+  1. En kısa yol problemlerinde (örneğin harita üzerinde en kısa yolu bulma) tercih edilir.
+  2. Minimum genişlikli ağaçları inşa etme ve gezme gibi durumlarda kullanılır.
+  3. Sosyal ağ analizi, keşif ve geniş kapsamlı arama problemlerinde kullanılabilir.
+  4. Oyun ağaçlarının genişlemesini inşa etmek için kullanılabilir.
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=9Oev6UgLhiI">
+    <img src="https://img.youtube.com/vi/9Oev6UgLhiI/0.jpg" alt="BinarySearch">
+  </a>
+</p>
+
+[başa-dön](#içindekiler)
 #
