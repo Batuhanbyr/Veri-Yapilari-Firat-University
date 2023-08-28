@@ -228,7 +228,7 @@ public static void insertionSort(int[] dizi) {
 	                }
 ```
 <p align="center">
-  <a href="https://https://www.youtube.com/watch?v=JU767SDMDvA">
+  <a href="https://www.youtube.com/watch?v=JU767SDMDvA">
     <img src="https://img.youtube.com/vi/JU767SDMDvA/0.jpg" alt="BinarySearch">
   </a>
 </p>
@@ -286,7 +286,7 @@ public static void quickSort(int[] dizi, int küçük, int büyük) {
 	                }
 ```
 <p align="center">
-  <a href="https://https://www.youtube.com/watch?v=Hoixgm4-P4M">
+  <a href="https://www.youtube.com/watch?v=Hoixgm4-P4M">
     <img src="https://img.youtube.com/vi/Hoixgm4-P4M/0.jpg" alt="BinarySearch">
   </a>
 </p>
