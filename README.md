@@ -436,11 +436,28 @@ public static void mergeSort(int[] arr, int left, int right) {
 </p>
 
 #
+                                                                 
+| Algoritmalar |   Best-Case    |   Worst-Case  |    Average-Case |
+|     :---:    |     :---:      |     :---:     |      :---:      |  
+| Linear       |       O(1)     |       O(N)    |       O(N)      |
+| Binary       |       O(1)     |       O(LOGN) |       O(LOGN)   | 
+| Bubble       |       O(N)     |       O(N^2)  |       O(N^2)    |
+| Selection    |       O(N^2)   |       O(N^2)  |       O(N^2)    |
+| Insertion    |       O(N)     |        O(N^2) |       O(N^2)    |
+| QuickSort    |       O(NLOGN) |      O(N^2)   |       O(NLOGN)  |
+| HeapSort     |      O(NLOGN)  |      O(NLOGN) |     O(NLOGN)    |
+
+#
 
 # İkili Ağaçlar (Binary Search Tree)
 <a name="ağaçlar"></a>
 * İkili arama ağacında bir düğümün en fazla iki tane çoçuğu vardır ve alt/çocuk bağlantıları belirli bir sıraya göre yapılır. Küçük veya alfabetik olarak önce olanlar sola, büyük veya eşit olanlar sağ tarafa bağlanır.
 * Dengeli ikili ağaç üzerinde arama yapmanın karmaşıklığı `O(log₂[n])`, dengesiz bir ikili ağaç üzerinde ise (bağlantılı listeye kaymıştır) `O(n)` ' e doğru kayar.
+* Nerelerde Kullanılır?
+  1. File Explorer
+  2. Database
+  3. DNS
+  4. HTML DOM
   
 Basit Bir Dengeli İkili Ağaç Modeli:
 ```mermaid
