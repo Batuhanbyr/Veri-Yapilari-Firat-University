@@ -82,7 +82,7 @@ void ArayaEkle(int indis, int x) {
 
 
 
-void Yazdır() { // doğru yaptım !
+void Yazdır() { 
 	Node temp=head;
 	System.out.println(temp.data);
 	while(temp.next!=null) {
