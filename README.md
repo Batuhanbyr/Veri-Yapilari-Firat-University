@@ -31,7 +31,6 @@
   * Nerelerde Kullanılır?
      - Küçük veri setlerinde ve sırasız verilerde kullanılabilir. Veri seti çok büyük değilse veya dizi sırasızsa tercih edilebilir. Örnek olarak, bir kitaplığın raflarında belirli bir kitabı aramak gibi.
      - İnternet tarayıcılar, web sayfasında metin ararken genellikle lineer arama algoritmasını kullanır.
-     - [başa-dön](#içindekiler)
 ```java
 public static int doğrusalArama(int[] dizi, int hedef) {
 	        for (int i = 0; i < dizi.length; i++) {
@@ -48,7 +47,7 @@ public static int doğrusalArama(int[] dizi, int hedef) {
     <img src="https://img.youtube.com/vi/246V51AWwZM/0.jpg" alt="BinarySearch">
   </a>
 </p>
-
+ [başa-dön](#içindekiler)
 #
 ### İkili Arama Algoritması (Binary Search)
 <a name="ikili-arama"></a>
