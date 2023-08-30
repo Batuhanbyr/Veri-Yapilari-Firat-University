@@ -11,10 +11,11 @@
 #
 
 # Algoritmalar
-[başa-dön](#içindekiler)
 <a name="algoritmalar"></a>
 1. Arama Algoritmaları [AramaAlgoritmaları](#arama)
 2.  Sıralama Algoritmaları [SıralamaAlgoritmaları](#sıralı-arama)
+
+[başa-dön](#içindekiler)
 #
 ### Arama Algoritmaları
 <a name="arama"></a>
