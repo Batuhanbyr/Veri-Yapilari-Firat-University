@@ -1,5 +1,4 @@
->Teorik Sorular & Çözümleri | Diğer sorular ve cevapları Main
->2dedir
+>Teorik Sorular & Çözümleri | Diğer sorular ve cevapları Main'dedir
 ## 4.Soru
 *  Aşağıda verilen iki seriyide ikili arama ağacına yerleştiriniz. (İkl değeri kök olarak alınız ve sırasıyla yerleştiriniz.) 
    1. 10, 5, 3, 12, 9, 18, 16, 13 
