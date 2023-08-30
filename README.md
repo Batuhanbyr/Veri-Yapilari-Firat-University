@@ -59,7 +59,6 @@ public static int doğrusalArama(int[] dizi, int hedef) {
   * Nerelerde Kullanılır?
      - büyük veritabanlarında veya indekslenmiş verilerde ikili arama daha yaygın olarak kullanılır.
   * 🔴 `NOT:` İkili arama, lineer aramaya göre genellikle daha hızlıdır. Ancak ikili arama için dizi sıralı olmalıdır, bu nedenle dizi sıralı ise tercih edilir. Lineer arama ise dizi sıralı ya da sırasız olsa da çalışabilir, ancak büyük veri setleri için daha yavaş olabilir.
-  * [başa-dön](#içindekiler)
 ```java
  public static int ikiliArama(int[] dizi, int hedef) {
 	        int sol = 0;
@@ -92,6 +91,7 @@ public static int doğrusalArama(int[] dizi, int hedef) {
   </a>
 </p>
 
+ [başa-dön](#içindekiler)
 #
 
 ### Sıralama Algoritmaları
