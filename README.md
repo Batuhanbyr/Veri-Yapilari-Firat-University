@@ -47,8 +47,11 @@ public static int doğrusalArama(int[] dizi, int hedef) {
     <img src="https://img.youtube.com/vi/246V51AWwZM/0.jpg" alt="BinarySearch">
   </a>
 </p>
+
  [başa-dön](#içindekiler)
+ 
 #
+
 ### İkili Arama Algoritması (Binary Search)
 <a name="ikili-arama"></a>
 * `Açıklama:` İkili arama, sıralı bir dizide hedef elemanı bulmak için kullanılır. Her adımda diziyi ikiye bölerek aranan elemanı bulmaya çalışır. Bu sayede veriyi hızlı bir şekilde arama yapar. Ancak dizi sıralı olmalıdır ve bu nedenle önceden sıralama işlemi gerekebilir.
