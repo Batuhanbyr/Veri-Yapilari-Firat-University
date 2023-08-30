@@ -48,6 +48,7 @@ public static int doğrusalArama(int[] dizi, int hedef) {
   </a>
 </p>
 
+
  [başa-dön](#içindekiler)
  
 #
