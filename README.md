@@ -106,8 +106,8 @@ public static int doğrusalArama(int[] dizi, int hedef) {
 * Hızlı Sıralama Algoritması (Quick Sort) [quick](#quick)
 * Yığınlama Sıralaması (Heap Sort) [heap](#heap)
 * Birleştirme Sıralaması (Merge Sort)  [merge](#merge)
-* [başa-dön](#içindekiler)
 
+ [başa-dön](#içindekiler)
 #
 
 ### Baloncuk Sıralaması (Bubble Sort)
@@ -128,7 +128,7 @@ public static int doğrusalArama(int[] dizi, int hedef) {
      - algoritma analizinde, en kötü durum senaryolarını test etmek için kullanılabilir.
       
 * 🔴 `NOT:` Genel olarak, Bubble Sort verimlilik açısından daha iyi alternatifleri olduğu için gerçek dünya uygulamalarında sınırlı bir kullanıma sahiptir. Daha büyük veri setleri ve daha hızlı sıralama algoritmaları gerektiğinde Bubble Sort yerine diğer algoritmalar tercih edilir.
-* [başa-dön](#içindekiler)
+
 
 ```java
 public static void bubbleSort(int[] dizi) {
@@ -149,6 +149,7 @@ public static void bubbleSort(int[] dizi) {
   </a>
 </p>
 
+ [başa-dön](#içindekiler)
 #
 
 ### Seçmeli Sıralama (Selection Sort)
@@ -169,7 +170,7 @@ public static void bubbleSort(int[] dizi) {
      - daha verimli sıralama algoritmalarıyla karşılaştırma yapmak veya daha gelişmiş algoritmaların nasıl çalıştığını anlamak için kullanılabilir.
       
 * 🔴 `NOT:` Genel olarak, gerçek dünya uygulamalarında Selection Sort'un kullanımı sınırlıdır. Daha büyük veri setleri ve daha hızlı sıralama algoritmaları gerektiğinde diğer algoritmalar tercih edilir.
-* [başa-dön](#içindekiler)
+
 
 ```java
 public static void selectionSort(int[] dizi) {
@@ -193,6 +194,7 @@ public static void selectionSort(int[] dizi) {
   </a>
 </p>
 
+ [başa-dön](#içindekiler)
 # 
 
 ### Ekleme Sıralaması (Insertion Sort)
@@ -213,7 +215,7 @@ public static void selectionSort(int[] dizi) {
      - diğer daha karmaşık sıralama algoritmalarının nasıl çalıştığını anlamak ve karşılaştırmak için bir başlangıç noktası olarak kullanılabilir.
       
 * 🔴 `NOT:` Insertion Sort, nispeten küçük veri setleri veya nispeten sıralı verilerde kullanıldığında iyi bir performans gösterebilir. Ancak büyük veri setlerinde veya daha hızlı sıralama algoritmalarının tercih edilmesi gerektiğinde kullanımı sınırlıdır.
-* [başa-dön](#içindekiler)
+
 
 ```java
 public static void insertionSort(int[] dizi) {
@@ -236,6 +238,7 @@ public static void insertionSort(int[] dizi) {
   </a>
 </p>
 
+ [başa-dön](#içindekiler)
 #
 ### Hızlı Sıralama (Quick Sort)
 <a name="quick"></a>
@@ -257,7 +260,7 @@ public static void insertionSort(int[] dizi) {
      - Veri madenciliği ve büyük veri analizi alanlarında tercih edilebilir.
       
 * 🔴 `NOT:` Genel olarak, Quick Sort büyük veri setlerini hızlı bir şekilde sıralamak istendiğinde veya veri sıralamasının gerektiği birçok uygulama alanında kullanılabilir. Daha hızlı sıralama algoritmaları olan Merge Sort veya Tim Sort gibi algoritmalarla da karşılaştırma yapmak faydalı olabilir.
-* [başa-dön](#içindekiler)
+
 
 ```java
 public static void quickSort(int[] dizi, int küçük, int büyük) {
@@ -294,6 +297,8 @@ public static void quickSort(int[] dizi, int küçük, int büyük) {
   </a>
 </p>
 
+ [başa-dön](#içindekiler)
+
 # 
 
 ### Yığınlama Sıralaması (Heap Sort)
@@ -312,7 +317,7 @@ public static void quickSort(int[] dizi, int küçük, int büyük) {
      - Büyük miktardaki veri setlerini analiz etmek veya sıralamak için Heap Sort kullanılabilir. İstatistik ve veri madenciliği uygulamalarında tercih edilebilir.
       
 * 🔴 `NOT:` Genel olarak, Heap Sort büyük veri setlerini sıralamak veya öncelik kuyrukları oluşturmak gibi durumlarda tercih edilebilir. Daha verimli sıralama algoritmaları gibi Merge Sort veya Quick Sort gibi seçenekler de göz önünde bulundurulmalıdır.
-* [başa-dön](#içindekiler)
+
 
 ```java
 public static void heapSort(int[] dizi) {
@@ -361,6 +366,8 @@ public static void heapSort(int[] dizi) {
   </a>
 </p>
 
+ [başa-dön](#içindekiler)
+ 
 #
 
 ### Birleştirme Sıralaması (Merge Sort)
@@ -379,7 +386,7 @@ public static void heapSort(int[] dizi) {
      - Bellek boyutları yetersiz olduğunda veya veri belleğine sığmayan büyük veri setleri üzerinde sıralama yapmak gerektiğinde Merge Sort kullanılabilir.
       
 * 🔴 `NOT:` Genel olarak, Merge Sort büyük veri setleri üzerinde sıralama gerektiğinde veya stabil bir sıralama algoritması kullanılması gerektiğinde tercih edilebilir. Diğer hızlı sıralama algoritmaları gibi Quick Sort veya Heap Sort da göz önünde bulundurulabilir.
-* [başa-dön](#içindekiler)
+
 
 ```java
 public static void mergeSort(int[] arr, int left, int right) {
@@ -438,6 +445,7 @@ public static void mergeSort(int[] arr, int left, int right) {
   </a>
 </p>
 
+ [başa-dön](#içindekiler)
 #
                                                                  
 | Algoritmalar |   Best-Case    |   Worst-Case  |    Average-Case |
@@ -630,13 +638,15 @@ int size(Node root) {
 	}
 }
 ```
-[başa-dön](#içindekiler)
+
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=Gt2yBZAhsGM">
     <img src="https://img.youtube.com/vi/Gt2yBZAhsGM/0.jpg" alt="BinarySearch">
   </a>
 </p>
+
+ [başa-dön](#içindekiler)
 
 #
 
@@ -645,7 +655,8 @@ int size(Node root) {
 1. Komşuluk Matrisi &  Komşuluk Listesi (Adjacency Matris & Adjacency Matris)
 2. Depth First Search - DFS
 3. Breadth First Search - BFS
-4. [başa-dön](#içindekiler)
+
+[başa-dön](#içindekiler)
 
 ## Komşuluk Matrisi &  Komşuluk Listesi (Adjacency Matris & Adjacency Matris)
 `Açıklama:`Komşuluk matrisi, bir grafın düğümlerinin komşuluk ilişkilerini temsil etmek için kullanılan bir matristir. Eğer iki düğüm arasında bir kenar varsa, ilgili matris hücresi 1 olarak işaretlenir; aksi halde 0 olarak kalır. Komşuluk matrisi genellikle kare matris şeklindedir (NxN boyutunda), N grafın düğüm sayısını temsil eder. Simetrik olmak zorundadır. Komşuluk listesi, her düğümün komşularını bir liste veya dizi şeklinde saklayan bir veri yapısıdır. Her düğüm için bir liste veya dizi elemanı bulunur ve bu elemanlar düğümün komşularını temsil eder.
