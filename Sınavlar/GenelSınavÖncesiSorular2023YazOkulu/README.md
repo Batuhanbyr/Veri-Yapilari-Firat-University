@@ -2,7 +2,7 @@
 ## 4.Soru
 *  Aşağıda verilen iki seriyide ikili arama ağacına yerleştiriniz. (İkl değeri kök olarak alınız ve sırasıyla yerleştiriniz.) 
    1. 10, 5, 3, 12, 9, 18, 16, 13 
-   2. fatma, ali, veli, bilal, osmman, hıdır
+   2. fatma, ali, veli, bilal, osman, hıdır
  
 ```code
    10
@@ -108,5 +108,12 @@ en iyi durum
 ## 8.Soru
 * Stack, Kuyruk ve Ağaç yapılarının arasındaki benzerlikler ve farklılıkları, kullanıldıkları alanları açıklayınız.
 
+| Özellikler         | Stack              | Kuyruk             | Ağaç               |
+|--------------------|--------------------|--------------------|--------------------|
+| Temel İşleyiş      | LIFO (Son giren,  ilk çıkar)    | FIFO (İlk giren, ilk çıkar)   | Hiyerarşik yapı   |                                                         
+| Depolama Yapısı   | Lineer         | Lineer        | Hiyerarşik |
+| Veri ekleme       | Üstüne ekler | Sona ekler  | Kökten başlayarak ekler  |
+| Veri çıkarma       | Üstünden çıkar | Önden çıkar  | Belirli düğümü çıkarır  |
+| Kullanım Alanları | Geri alma işlemi(internet tarayıcılarında), işlem çağrısı, sistem çağrıları, bellek yönetimi|İşlemci planlaması, dosya sistemi, ağ yönetimi, mesajlaşma|Veritabanı yönetim sistemleri, Otomatik düzeltme ve tahminleme, internet tarayıcıları geçmişi, dosya sistemleri, sıralama algoritmaları     |
 
 
