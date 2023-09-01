@@ -59,12 +59,12 @@ Bilal  Fatma
 *   4 ve 5. soruda oluşturduğunuz ikili arama ağacı üzerinde preorder, postorder, inorder, levelorder gezinme yöntemleri ile geziniz.
    * 10, 5, 3, 12, 9, 18, 16, 13 `(4.soru)`
       1. Preorder : 10, 5, 3, 9, 12, 18, 16
-      2. Postorder : 3, 5, 9, 13, 16, 18, 12, 10
+      2. Postorder : 3, 9, 5, 13, 16, 18, 12
       3. Levelorder : (0: 10),(1: 5, 12),(2: 3, 9, 18),(3: 16),(4: 13)
       4. inorder : 3, 5, 9, 10, 12, 13, 16, 18
    * 10, 5, 3, 12, 9, 18, 16, 13 `(5.soru)`
       1. Preorder : 10, 5, 3, 9, 13, 12, 18, 16, 13, 10
-      2. Postorder : 3, 5, 9, 12, 13, 18, 16, 10
+      2. Postorder : 3, 9, 5, 12, 18, 16, 13, 10
       3. Levelorder : (0: 10),(1: 5, 13),(2: 3, 9, 12, 16),(3: 18)
       4. inorder : 3, 5, 9, 10, 12, 13, 16, 18
    * fatma, ali, veli, bilal, osmman, hıdır `(4.soru)`
