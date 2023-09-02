@@ -114,6 +114,6 @@ en iyi durum
 | Depolama Yapısı   | Lineer         | Lineer        | Hiyerarşik |
 | Veri ekleme       | Üstüne ekler | Sona ekler  | Kökten başlayarak ekler  |
 | Veri çıkarma       | Üstünden çıkar | Önden çıkar  | Belirli düğümü çıkarır  |
-| Kullanım Alanları | Geri alma işlemi(internet tarayıcılarında), işlem çağrısı, sistem çağrıları, bellek yönetimi|İşlemci planlaması, dosya sistemi, ağ yönetimi, mesajlaşma|Veritabanı yönetim sistemleri, Otomatik düzeltme ve tahminleme, internet tarayıcıları geçmişi, dosya sistemleri, sıralama algoritmaları     |
+| Kullanım Alanları | Geri alma işlemi(internet tarayıcılarında), işlem çağrısı, sistem çağrıları, bellek yönetimi|İşlemci planlaması, dosya sistemi, ağ yönetimi, mesajlaşma|Veritabanı yönetim sistemleri, Otomatik düzeltme ve tahminleme, internet tarayıcıları geçmişi, dosya sistemleri, sıralama algoritmaları, Derin Öğrenme     |
 
 
