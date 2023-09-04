@@ -21,7 +21,7 @@ public class İkiliDaireselListe {
 		}
 	}
 	
-	public void çıkar() { // 40. elemanı listedden çıkartıyoruz
+	public void çıkar() { // 20. elemanı listedden çıkartıyoruz
 		Node temp = head; 
 		for(int i=0; i<20; i++) {
 			temp = temp.next;
