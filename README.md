@@ -2,11 +2,13 @@
 # VERİ YAPILARI ***Fırat Üniversitesi*** <sub> <img src="https://github.com/Batuhanbyr/Veri-Yapilari-Firat-University/assets/95686987/51d55905-e9c9-4a7d-b0f8-276c039482d3" alt="drawing" width="50"/> </sub>
 
 >BM veri yapıları dersi konuları & çıkmış soruları
+
 # İçindekiler
 <a name="içindekiler"></a>
 1. Algoritmalar [Algoritmalar](#algoritmalar)
 2. İkili Ağaçlar [Ağaçlar](#ağaçlar)
 3. Graflar [Graflar](#graflar)
+4. Katkıda bulunma [katkı](#katkı)
 
 #
 
@@ -652,7 +654,7 @@ int size(Node root) {
 #
 
 # Graflar
-<a name="grraflar"></a>
+<a name="graflar"></a>
 1. Komşuluk Matrisi &  Komşuluk Listesi (Adjacency Matris & Adjacency Matris)
 2. Depth First Search - DFS
 3. Breadth First Search - BFS
@@ -714,4 +716,15 @@ int size(Node root) {
 </p>
 
 [başa-dön](#içindekiler)
+#
+
+## Katkıda Bulunma :octocat:
+<a name="katkı"></a>
+Bu repoya her Fırat Üniversitesi öğrencisi katkıda bulunabilir. Katkıda bulunmak için aşağıdaki adımları takip edebilirsiniz.
+1. Repoyu kendi GitHub hesabınıza forklayın.
+2. Forkladığınız repoyu bilgisayarınıza klonlayın.
+3. Klonladığınız repoda çalışmak üzere yeni bir dal oluşturun.
+4. Yaptığınız değişiklikleri dalınıza itin.
+5. Orijinal repoya çekme isteği gönderin.
+- (NOT: bu adımlar çok uzun geldiyse ya da repoda bir yanlış fark ettiyseniz bir issue açın :woman_technologist: )
 #
