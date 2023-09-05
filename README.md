@@ -727,4 +727,6 @@ Bu repoya her Fırat Üniversitesi öğrencisi katkıda bulunabilir. Katkıda bu
 4. Yaptığınız değişiklikleri dalınıza itin.
 5. Orijinal repoya çekme isteği gönderin.
 - (NOT: bu adımlar çok uzun geldiyse ya da repoda bir yanlış fark ettiyseniz bir issue açın :woman_technologist: )
+
+ [başa-dön](#içindekiler)
 #
